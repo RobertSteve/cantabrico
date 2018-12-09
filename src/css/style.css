@@ -1,0 +1,264 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E5E5E5;
+}
+/*
+ * Nav Bar
+*/
+.bg-navBar {
+    background-color: #183036;
+}
+.navbar-nav li {
+    margin: 0 7px;
+}
+/*
+ * Title
+*/
+.title {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    color: #202020;
+}
+/*
+ * Sub Title
+*/
+.subTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #202020;
+}
+/*
+ * Index
+*/
+.information {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.information .left {
+    width: 40%;
+}
+.information .center,
+.information .right {
+    width: 30%;
+}
+.information .center div,
+.information .right div{
+    height: 50%;
+}
+.subSlider {
+    width:100%;
+    height: auto;
+    padding: 40px 0;
+    position: relative;
+}
+.subSlider-thumbs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.subSlider-thumbs::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: block;
+}
+.subSlider-slider {
+    position: relative;
+    z-index: 3;
+}
+.titleView360 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #c2ab82;
+    border: 2px dotted #c2ab82 ;
+    font-size: 30px;
+    padding: 5px 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.titleView360::before {
+    content: "";
+    border: 2px solid #c2ab82;
+    position: absolute;
+    top: -3px;
+    width: 70px;
+    text-align: center;      
+}
+.titleView360::after {
+    content: "";
+    border: 2px solid #c2ab82;
+    position: absolute;
+    bottom: -3px;
+    width: 70px;
+    text-align: center;      
+}
+.titleItem {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 30px;
+    color: #759892;            
+}
+.subTitleItem {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
+    color: #1A2F38;
+}
+.contentItem {
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 10px;
+}
+.iconItem {
+    margin: 20px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 700;
+}
+/*
+ * Map
+*/
+#map {
+    height: 400px;
+    width: 100%;
+}
+/*
+ * Footer
+*/
+.footer {
+    background-color: #222126;
+}
+.contentFooter {
+    display: flex;
+    justify-content: space-between;
+}
+.contentFooter .copyright {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.contentFooter .logos {
+    display: flex;
+}
+.titleSubFooter {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleSubFooter::after {
+    content: "";
+    margin-top: 5px;
+    border: 2px solid #c2ab82;
+    width: 70px;
+}
+.contentSubFooter {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 10px;
+    color: #535353;
+}
+.itemSubFooter {
+    border-right: 1px dotted #c2ab82;
+}
+.itemSubFooter:last-child {
+    border-right: 0;
+}
+/*
+ * Contact Us
+*/
+.contactUs .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 40px;
+}
+.contactUs .content .leftContent .form-row .form-group label {
+    font-family: 'Julius Sans One', sans-serif; 
+}
+.contactUs .content .leftContent .form-row .form-group input,
+.contactUs .content .leftContent .form-row .form-group textarea {
+    border-radius: 0px !important;
+    background-color: #DBDBDB;
+    color: #414141;
+    font-size: 14px;
+}
+.contactUsSecundary::before {
+    content: "";
+    border: 2px solid #c2ab82;
+    width: 70px;
+    position: absolute;
+}
+.checkboxLabelCantaBrico {
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif !important;
+
+}
+.btn-cantabrico {
+    background-color: #7BC1B0;
+    border-radius: 0px !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.inline {
+    border: 3px solid #c2ab82;
+    width: 70px;
+}
+.border-bottom-dotted {
+    border-bottom: 1px dotted #c2ab82;
+}
+.subFooter .modSubFooter:nth-child(1),
+.subFooter .modSubFooter:nth-child(2),
+.subFooter .modSubFooter:nth-child(3){
+    border-right: 1px dotted #c2ab82;
+}
+.navbar-nav li {
+    margin: 0 7px;
+}
+/*
+ * Media Query
+*/
+@media only screen and (max-width: 1023px) {
+    .itemSubFooter {
+        border-right: 0;
+        margin-top: 20px;
+    }
+    .contentFooter {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contentFooter .logos {
+        flex-direction: column;
+    }
+    .contactUs .content {
+        padding: 20px !important;
+    }
+    .information {
+        height: 300px !important;
+    }
+    .information .left {
+        display: none;
+    }
+    .information .center,
+    .information .right {
+        width: 50% !important;
+    }
+}
