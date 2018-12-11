@@ -343,13 +343,13 @@ body {
 }
 @media only screen and (min-width: 600px) {
     .article {
-        height: 400px !important;
+        height: 600px !important;
     }
     .article-wrapper {
-        height: 400px !important;
+        height: 600px !important;
     }
     .article-wrapper-2 {
-        height: 200px !important;
+        height: 300px !important;
     }
 }
 @media only screen and (min-width: 768px) {
