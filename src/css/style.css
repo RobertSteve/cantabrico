@@ -117,6 +117,8 @@ body {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 20px;
     color: #1A2F38;
+    display: flex;
+    align-items: center;
 }
 .contentItem {
     font-size: 14px;
@@ -129,6 +131,39 @@ body {
     text-transform: uppercase;
     color: #000000;
     font-weight: 700;
+}
+.centerCarousel {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centerCarousel .title {
+    font-size: 60px;
+    color: #ffffff;          
+}
+.centerCarousel .btn-carousel {
+    font-size: 20px;
+    font-weight: 300;
+    background-color: #C28653;
+    border-radius: 0 !important;
+}
+.icon {
+    font-size: 30px;
+}
+.subIcon {
+    font-size: 20px;
+}
+.icon-area {
+    font-size: 40px;
+}
+.centerContentDiv {
+    display: flex;
+    align-items: center;
+}
+.text-golden {
+    color: #C6A882;
 }
 /*
  * Map
